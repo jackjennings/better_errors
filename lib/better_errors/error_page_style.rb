@@ -5,6 +5,7 @@ module BetterErrors
       require "sassc" unless defined? SassC
 
       style_dir = File.expand_path("style", File.dirname(__FILE__))
+
       style_file = "#{style_dir}/main.scss"
 
       engine = SassC::Engine.new(
